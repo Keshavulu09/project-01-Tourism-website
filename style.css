@@ -1,9 +1,13 @@
 
 
 body {
+    color: black;
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+    background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url("agency.jpg");
+    background-repeat: no-repeat;
+    background-size: 2500px;
 }
 
 header{
@@ -21,9 +25,19 @@ header{
 }
 header .nav a{
     color: #fff;
-    font-size: 10px;
+    font-size: 0.4cm;
     margin: 10px;
    
+}
+header .logo{
+    font-size: 0.5cm;
+    font-weight: bolder;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+header .logo span{
+    color: orange;
 }
 header .nav a:hover{
     color: orange;
@@ -69,12 +83,12 @@ header .search-bar-container label:hover{
 
 .hero h1 {
     font-size: 2.5rem;
-    color: black;
+    color:  white;
 }
 
 .hero p {
     font-size: 1.5rem;
-    color: black;
+    color: white;
 }
 
 .btn {
@@ -93,26 +107,34 @@ header .search-bar-container label:hover{
 }
 
 .destination {
+    color: white;
     padding: 50px 0;
     text-align: center;
 }
 
 .destination h2 {
+    color: white;
     font-size: 2rem;
 }
 
 .destination-card {
+    color: white;
     display: inline-block;
     margin: 20px;
     padding: 20px;
     border: 1px solid #ccc;
     border-radius: 5px;
     max-width: 300px;
+    text-align: justify;
+}
+.destination-card .h3{
+    text-align: center;
+
 }
 
 .destination-card img {
     max-width: 100%;
-    height: auto;
+    height: 200px;
 }
 
 footer {
@@ -122,7 +144,7 @@ footer {
     padding: 10px 0;
 }
 .icons{
-    margin-left: 17cm;
+    margin-left: 12cm;
     color: white;
 }
 
