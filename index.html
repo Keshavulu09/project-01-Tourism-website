@@ -3,75 +3,129 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tour & Travel Agency</title>
+    <title>Project-1</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <link rel="stylesheet" href="style.css">
+
 </head>
 <body>
     <header>
+        <div id="menu-bar" class="fas fa-bars"></div>
+
         <a href="#" class="logo"><span>T</span>ravel</a>
+
         <nav class="nav">
             <a href="#home">Home</a>
             <a href="#book">Book</a>
-            <a href="#packages">Packages</a>
+            <a href="packages.html">Packages</a>
             <a href="#services">Service</a>
             <a href="#gallery">Gallery</a>
             <a href="#Contact">Contact</a>
         </nav>
+
         <div class="icons">
-            <a href="login.html" target="_blank" ><img src="login1.svg" alt=""></a>           
-            
+            <i class="fas fa-search" id="search-btn"></i>
+            <i class="fas fa-user" id="login-btn"></i>
         </div>
+
         <form action="" class="search-bar-container">
             <input type="search" id="search-bar" placeholder="search here...!">
             <label for="search-bar" class="fas fa-search"></label>
         </form>
     </header>
-    <!--home page-->
-     <table id="home">
-    <section class="hero">
-        <h1>Welcome to Your Dream Vacation</h1>
-        <p>Explore the world with us</p>
-        <a href="#" class="btn">Book Now</a>
+    <div class="login-form-container">
+
+        <i class="fas fa-times" id="form-close"></i>       
+        
+        <form action="" method="post">
+            <h3>login</h3>
+            <input type="email" class="box" placeholder="Enter your email">
+            <input type="password" class="box" placeholder="Enter your password">
+            <input type="submit" value="login now" class="btn">
+            <input type="checkbox" id="remember">
+            <label for="remember">remember me</label>
+            <p>forget password?<a href="#">click here</a></p>
+            <p>don't have an account?<a href="#">register now</a></p>
+
+        </form>
+    </div>
+    <section    class="home" id="home">
+
+        <div class="content">
+            <h3>Adventure is worthwhile</h3>
+            <p>discover now places with us, adventure awaits</p>
+            <a href="#" class="btn">Discover more</a>
+        </div>
+
+        <div class="controls">
+            <span class="vid-btn active" data-src="v1.mp4"></span>
+            <span class="vid-btn" data-src="pexels_videos_2146396 (2160p).mp4"></span>
+            <span class="vid-btn" data-src="pexels_videos_2734194 (2160p).mp4"></span>
+            <span class="vid-btn" data-src="video (2160p).mp4"></span>
+            <span class="vid-btn" data-src="pexels_videos_1409899 (2160p).mp4"></span>
+        </div>
+
+        <div class="video-container">
+            <video src="v1.mp4" id="video-slider" loop autoplay muted></video>
+        </div>
+        
+
     </section>
 
-    <section class="destination">
-        <h2>Popular Destinations</h2>
-        <div class="destination-card">
-            <img src="tour1.jpg" alt="Destination 1">
-            <h3 class="h3">Tirumala</h3>
-            <p>Tirumala is located 3,200 feet (980 m) above sea level and covers an area of approximately 10.33 square miles (26.8 km2)
-            </p>
-        </div>
-        <div class="destination-card">
-            <img src="Raaja_mahal_1.jpg" alt="Destination 2">
-            <h3 class="h3">Chandragiri Fort</h3>
-            <p>The palace was constructed using stone, brick, lime mortar and devoid of timber. Now it is changed as the museum and place of our old civilazation.</p>
-        </div>
-        <div class="destination-card">
-            <img src="tour3.png" alt="Destination 3">
-            <h3 class="h3">SV Zoo Park</h3>
-            <p>The zoo at the foothills of Tirupati is one of the biggest in India, spread over 5500 acres. It is not an exotic zoo, with animals from across the world but it is a good one. </p>
-        </div>
-        <div class="destination-card">
-            <img src="talakona.jpg" alt="Destination 3">
-            <h3 class="h3">Talakona Waterfalls</h3>
-            <p>Talakona is home to Talakona Waterfalls, which is one of the highest falls in the country. The word 'talakona' originates from Telugu word 'tala' meaning head and 'kona' meaning hill.</p>
-        </div>
-        <div class="destination-card">
-            <img src="jain.jpg" alt="Destination 3">
-            <h3 class="h3">Jain Temple</h3>
-            <p>The idol of Shri Tirupathi Lord Venkatesh Balaji is said by the Jains to be originally of Tirthankara Neminath which the Hindus modified after Shri Aadi Shankaracharya's efforts to revive Hinduism.</p>
-        </div>
-        <div class="destination-card">
-            <img src="Mamandur.jpg" alt="Destination 3">
-            <h3 class="h3">Mamandur Forest</h3>
-            <p>Mamandur is bountifully endowed with nature in the form of hills and valleys, many picturesque spots and seasonal waterfalls and ponds of Eastern Ghats.It is located near tirupathi.</p>
+    <section class="book" id="book">
+
+        <h1 class="heading">
+            <span>b</span>
+            <span>o</span>
+            <span>o</span>
+            <span>k</span> 
+            <span class="space"></span>
+            <span>n</span>
+            <span>o</span>
+            <span>w</span>
+        </h1>
+
+        <div class="row">
+
+            <div class="image">
+                <img src="bookimg.jpg" alt="Book now">
+            </div>
+
+            <form action="">
+                <div class="inputbox">
+                    <h3>Where to</h3>
+                    <input type="text" placeholder="Place name">
+                </div>
+                <div class="inputbox">
+                    <h3>How many</h3>
+                    <input type="number" placeholder="persons">
+                </div>
+                <div class="inputbox">
+                    <h3>Arraivels</h3>
+                    <input type="date">
+                </div>
+                <div class="inputbox">
+                    <h3>Leaving</h3>
+                    <input type="date" >
+                </div>
+                <input type="submit" class="btn" value="Book Now">
+            </form>
         </div>
     </section>
-      </table>
-    <footer>
-        <p>&copy; 2023 Tour & Travel Agency</p>
-    </footer>
+    <section class="packages" id="packages">
+        <h1 class="heading">
+            <span>p</span>
+            <span>a</span>
+            <span>c</span>
+            <span>k</span> 
+            <span>a</span>
+            <span>g</span>
+            <span>e</span>
+            <span>s</span>
+        </h1>
+
+    </section>
+    
+    <script src="script.js"></script>
 </body>
 </html>
